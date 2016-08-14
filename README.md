@@ -1,3 +1,3 @@
 # tinyURL
 
-A MEAN Stack App That Transfers Long Url to Short Url
+Full Stack Tiny Url App
