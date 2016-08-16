@@ -1,3 +1,3 @@
 # tinyURL
 
-Full Stack Tiny Url App
+Full Stack Tiny URL App
