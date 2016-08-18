@@ -3,12 +3,11 @@
  */
 var express = require('express');
 var router = express.Router();
-var uslService = require('../services/urlService');
+var urlService = require('../services/urlService');
 
-//slice a short url and map it to long version
-router.get('*', function(req, res) {
+router.get('*', function (req, res) {
     var shortUrl = req.originalUrl.slice(1);
-    var longUrl = uslService.getLongUrl(shortUrl, req.app.shortToLongHash);
+    var longUrl = urlService.getLongUrl(shortUrl, req.app.shortToLongHash);
     res.redirect(longUrl);
 });
 
