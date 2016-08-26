@@ -8,7 +8,7 @@ var redirectRouter = require('./routes/redirect');
 var indexRouter = require('./routes/index');
 var mongoose = require('mongoose');
 
-mongoose.connect("mongodb://user:pwd@ds045785.mlab.com:45785/url_db");
+mongoose.connect("mongodb://username:pwd@ds045785.mlab.com:45785/url_db");
 
 app.use('/public', express.static(__dirname + "/public"));
 
